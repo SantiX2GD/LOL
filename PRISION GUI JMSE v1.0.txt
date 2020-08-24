@@ -1,0 +1,272 @@
+-- Made By: Jmuse#3982
+-- Full credit to the original script makers
+-- Website: https://exploits--jmuse.repl.co/
+ 
+local PrisonLife = Instance.new("ScreenGui")
+local MainGUI = Instance.new("Frame")
+local guns = Instance.new("TextButton")
+local btools = Instance.new("TextButton")
+local punch = Instance.new("TextButton")
+local doors = Instance.new("TextButton")
+local killall = Instance.new("TextButton")
+local speed = Instance.new("TextButton")
+local title = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local OpenGUI = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+--Properties:
+PrisonLife.Name = "Prison Life"
+PrisonLife.Parent = game.CoreGui
+ 
+MainGUI.Active = true
+MainGUI.Draggable = true
+ 
+MainGUI.Name = "MainGUI"
+MainGUI.Parent = PrisonLife
+MainGUI.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MainGUI.BackgroundTransparency = 0.30000001192093
+MainGUI.BorderSizePixel = 4
+MainGUI.Position = UDim2.new(0.738979161, 0, 0.229083672, 0)
+MainGUI.Size = UDim2.new(0, 224, 0, 446)
+MainGUI.Visible = false
+ 
+guns.Name = "guns"
+guns.Parent = MainGUI
+guns.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+guns.Position = UDim2.new(0.0535714291, 0, 0.0994897932, 0)
+guns.Size = UDim2.new(0, 200, 0, 50)
+guns.Font = Enum.Font.SourceSans
+guns.Text = "All Guns"
+guns.TextColor3 = Color3.new(1, 1, 1)
+guns.TextScaled = true
+guns.TextSize = 14
+guns.TextWrapped = true
+guns.MouseButton1Click:connect(function()
+     local Weapon = {"M4A1"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+ 
+local Weapon = {"AK-47"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+ 
+local Weapon = {"M9"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+ 
+local Weapon = {"Remington 870"}
+for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+if v.Name == Weapon[1] then
+local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+end
+end
+end)
+ 
+btools.Name = "btools"
+btools.Parent = MainGUI
+btools.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+btools.Position = UDim2.new(0.0535714291, 0, 0.227040812, 0)
+btools.Size = UDim2.new(0, 200, 0, 50)
+btools.Font = Enum.Font.SourceSans
+btools.Text = "Btools"
+btools.TextColor3 = Color3.new(1, 1, 1)
+btools.TextScaled = true
+btools.TextSize = 14
+btools.TextWrapped = true
+btools.MouseButton1Click:connect(function()
+    wait(0.1)
+local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+tool1.BinType = "Clone"
+tool2.BinType = "Hammer"
+tool3.BinType = "Grab"
+end)
+ 
+punch.Name = "punch"
+punch.Parent = MainGUI
+punch.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+punch.Position = UDim2.new(0.0535714291, 0, 0.354591846, 0)
+punch.Size = UDim2.new(0, 200, 0, 50)
+punch.Font = Enum.Font.SourceSans
+punch.Text = "Super Punch"
+punch.TextColor3 = Color3.new(1, 1, 1)
+punch.TextScaled = true
+punch.TextSize = 14
+punch.TextWrapped = true
+punch.MouseButton1Click:connect(function()
+    mainRemotes = game.ReplicatedStorage
+meleeRemote = mainRemotes['meleeEvent']
+mouse = game.Players.LocalPlayer:GetMouse()
+punching = false
+cooldown = false
+ 
+function punch()
+cooldown = true
+local part = Instance.new("Part", game.Players.LocalPlayer.Character)
+part.Transparency = 1
+part.Size = Vector3.new(5, 2, 3)
+part.CanCollide = false
+local w1 = Instance.new("Weld", part)
+w1.Part0 = game.Players.LocalPlayer.Character.Torso
+w1.Part1 = part
+w1.C1 = CFrame.new(0,0,2)
+part.Touched:connect(function(hit)
+if game.Players:FindFirstChild(hit.Parent.Name) then
+local plr = game.Players:FindFirstChild(hit.Parent.Name) 
+if plr.Name ~= game.Players.LocalPlayer.Name then
+part:Destroy()
+ 
+for i = 1,100 do
+meleeRemote:FireServer(plr)
+end
+end
+end
+end)
+ 
+wait(1)
+cooldown = false
+part:Destroy()
+end
+ 
+ 
+mouse.KeyDown:connect(function(key)
+if cooldown == false then
+if key:lower() == "f" then
+ 
+punch()
+ 
+end
+end
+end)
+end)
+ 
+doors.Name = "doors"
+doors.Parent = MainGUI
+doors.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+doors.Position = UDim2.new(0.0535714291, 0, 0.737244904, 0)
+doors.Size = UDim2.new(0, 200, 0, 50)
+doors.Font = Enum.Font.SourceSans
+doors.Text = "Remove Doors"
+doors.TextColor3 = Color3.new(1, 1, 1)
+doors.TextScaled = true
+doors.TextSize = 14
+doors.TextWrapped = true
+doors.MouseButton1Click:connect(function()
+    game.Workspace.Doors:Destroy()
+end)
+ 
+killall.Name = "killall"
+killall.Parent = MainGUI
+killall.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+killall.Position = UDim2.new(0.0535714291, 0, 0.609693885, 0)
+killall.Size = UDim2.new(0, 200, 0, 50)
+killall.Font = Enum.Font.SourceSans
+killall.Text = "Kill All"
+killall.TextColor3 = Color3.new(1, 1, 1)
+killall.TextScaled = true
+killall.TextSize = 14
+killall.TextWrapped = true
+killall.MouseButton1Click:connect(function()
+    wait(0.1)
+local Player = game.Players.LocalPlayer
+local prevCFrame = Player.Character.HumanoidRootPart.CFrame
+for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+if not v.Character:FindFirstChild("ForceField") then
+local playerName = v.Name
+local PlayerToKill = game.Players:FindFirstChild(playerName)
+ 
+repeat
+if Player.Character.Humanoid.Sit == true then
+Player.Character.Humanoid.Sit = false
+end
+Player.Character.HumanoidRootPart.CFrame = PlayerToKill.Character.HumanoidRootPart.CFrame
+for h = 1,10 do
+game.ReplicatedStorage.meleeEvent:FireServer(PlayerToKill)
+end
+game:GetService("RunService").RenderStepped:wait()
+until PlayerToKill.Character.Humanoid.Health == 0 or v == nil
+ 
+Player.Character.HumanoidRootPart.CFrame = prevCFrame
+end
+end
+end
+end)
+ 
+speed.Name = "speed"
+speed.Parent = MainGUI
+speed.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+speed.Position = UDim2.new(0.0535714291, 0, 0.482142866, 0)
+speed.Size = UDim2.new(0, 200, 0, 50)
+speed.Font = Enum.Font.SourceSans
+speed.Text = "Speed +150"
+speed.TextColor3 = Color3.new(1, 1, 1)
+speed.TextScaled = true
+speed.TextSize = 14
+speed.TextWrapped = true
+speed.MouseButton1Click:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+end)
+ 
+title.Name = "title"
+title.Parent = MainGUI
+title.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+title.BackgroundTransparency = 0.5
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 224, 0, 32)
+title.Font = Enum.Font.SciFi
+title.Text = "Jmuse's Prison Life GUI"
+title.TextColor3 = Color3.new(1, 1, 1)
+title.TextScaled = true
+title.TextSize = 14
+title.TextWrapped = true
+ 
+close.Name = "close"
+close.Parent = MainGUI
+close.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+close.Position = UDim2.new(-0.250000119, 0, -0.00140705891, 0)
+close.Size = UDim2.new(0, 38, 0, 50)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.new(1, 1, 1)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+close.MouseButton1Click:connect(function()
+    MainGUI.Visible = false
+    OpenGUI.Visible = true
+end)
+ 
+OpenGUI.Name = "OpenGUI"
+OpenGUI.Parent = PrisonLife
+OpenGUI.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+OpenGUI.BorderSizePixel = 5
+OpenGUI.Position = UDim2.new(0, 0, 0.468127549, 0)
+OpenGUI.Size = UDim2.new(0, 100, 0, 30)
+ 
+Open.Name = "Open"
+Open.Parent = OpenGUI
+Open.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, -0.0666666701, 0)
+Open.Size = UDim2.new(0, 95, 0, 34)
+Open.Font = Enum.Font.SciFi
+Open.Text = "OPEN"
+Open.TextColor3 = Color3.new(1, 1, 1)
+Open.TextScaled = true
+Open.TextSize = 14
+Open.TextWrapped = true
+Open.MouseButton1Click:connect(function()
+    MainGUI.Visible = true
+    OpenGUI.Visible = false
+end)
