@@ -1,0 +1,749 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Warning = Instance.new("Frame")
+local titleofthewarning = Instance.new("TextLabel")
+local Continue = Instance.new("TextButton")
+local warningcontent = Instance.new("TextLabel")
+local OPENHUB = Instance.new("Frame")
+local OPENBTON = Instance.new("TextButton")
+local MainMenu = Instance.new("Frame")
+local Home = Instance.new("Frame")
+local Titleofhome = Instance.new("TextLabel")
+local advising = Instance.new("TextLabel")
+local Guis = Instance.new("Frame")
+local topkek30 = Instance.new("TextButton")
+local roxploit60 = Instance.new("TextButton")
+local rosehub = Instance.new("TextButton")
+local admin = Instance.new("TextButton")
+local feanimationsgui = Instance.new("TextButton")
+local arsenalaimbot = Instance.new("TextButton")
+local walkspeedbypass = Instance.new("TextButton")
+local murdermistery2 = Instance.new("TextButton")
+local Scripts = Instance.new("Frame")
+local AnonimusAll = Instance.new("TextButton")
+local TrumpFace = Instance.new("TextButton")
+local GokuOP = Instance.new("TextButton")
+local raindropGUI = Instance.new("TextButton")
+local _666 = Instance.new("TextButton")
+local DarkTitanreborn = Instance.new("TextButton")
+local PrisionSCripts = Instance.new("Frame")
+local killall = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local btools = Instance.new("TextButton")
+local LamePrisionGUI20 = Instance.new("TextButton")
+local yerhacksXD = Instance.new("TextButton")
+local PrisionBreaker16 = Instance.new("TextButton")
+local PrisionBreaker15 = Instance.new("TextButton")
+local JmusePaidPrisionScript = Instance.new("TextButton")
+local OPenlateralbarButton = Instance.new("TextButton")
+local cLOSElateralbarButton = Instance.new("TextButton")
+local minimize = Instance.new("TextButton")
+local lateralbar = Instance.new("Frame")
+local HomeButton = Instance.new("TextButton")
+local PrisionScriptsButton = Instance.new("TextButton")
+local ScriptsButton = Instance.new("TextButton")
+local GuisButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Warning.Name = "Warning"
+Warning.Parent = ScreenGui
+Warning.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Warning.Position = UDim2.new(0.212283045, 0, 0.303350925, 0)
+Warning.Size = UDim2.new(0, 455, 0, 226)
+
+titleofthewarning.Name = "titleofthewarning"
+titleofthewarning.Parent = Warning
+titleofthewarning.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+titleofthewarning.Position = UDim2.new(-0.00154051185, 0, -0.0010613203, 0)
+titleofthewarning.Size = UDim2.new(0, 455, 0, 48)
+titleofthewarning.Font = Enum.Font.SourceSans
+titleofthewarning.Text = "Warning!"
+titleofthewarning.TextColor3 = Color3.fromRGB(0, 0, 0)
+titleofthewarning.TextScaled = true
+titleofthewarning.TextSize = 14.000
+titleofthewarning.TextWrapped = true
+
+Continue.Name = "Continue!"
+Continue.Parent = Warning
+Continue.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Continue.Position = UDim2.new(0.354565084, 0, 0.759868026, 0)
+Continue.Size = UDim2.new(0, 129, 0, 45)
+Continue.Font = Enum.Font.SourceSans
+Continue.Text = "Continue!"
+Continue.TextColor3 = Color3.fromRGB(0, 0, 0)
+Continue.TextScaled = true
+Continue.TextSize = 14.000
+Continue.TextWrapped = true
+Continue.MouseButton1Down:connect(function()
+Warning.Visible = false
+OPENHUB.Visible = true
+end)
+
+
+warningcontent.Name = "warningcontent"
+warningcontent.Parent = Warning
+warningcontent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+warningcontent.BorderSizePixel = 0
+warningcontent.Position = UDim2.new(-0.000677825592, 0, 0.211328089, 0)
+warningcontent.Size = UDim2.new(0, 455, 0, 114)
+warningcontent.Font = Enum.Font.SourceSans
+warningcontent.Text = "This gui Is Thinked For Free EXploits! if you use a Paid EXploit, look For a Best Gui! ;)"
+warningcontent.TextColor3 = Color3.fromRGB(255, 255, 255)
+warningcontent.TextScaled = true
+warningcontent.TextSize = 14.000
+warningcontent.TextWrapped = true
+
+OPENHUB.Name = "OPENHUB"
+OPENHUB.Parent = ScreenGui
+OPENHUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OPENHUB.Position = UDim2.new(-3.7252903e-09, 0, 0.910052896, 0)
+OPENHUB.Selectable = true
+OPENHUB.Size = UDim2.new(0, 80, 0, 51)
+OPENHUB.Visible = false
+
+OPENBTON.Name = "OPENBTON"
+OPENBTON.Parent = OPENHUB
+OPENBTON.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+OPENBTON.Position = UDim2.new(-0.00130800903, 0, -0.0196078271, 0)
+OPENBTON.Size = UDim2.new(0, 80, 0, 52)
+OPENBTON.Font = Enum.Font.SourceSans
+OPENBTON.Text = "OPEN"
+OPENBTON.TextColor3 = Color3.fromRGB(0, 0, 0)
+OPENBTON.TextScaled = true
+OPENBTON.TextSize = 14.000
+OPENBTON.TextWrapped = true
+OPENBTON.MouseButton1Down:connect(function()
+MainMenu.Visible = true
+OPENHUB.Visible = false
+end)
+
+
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = ScreenGui
+MainMenu.BackgroundColor3 = Color3.fromRGB(170, 85, 0)
+MainMenu.Position = UDim2.new(0.19492656, 0, 0.257495582, 0)
+MainMenu.Selectable = true
+MainMenu.Size = UDim2.new(0, 426, 0, 317)
+MainMenu.Visible = false
+MainMenu.Draggable = true
+
+Home.Name = "Home"
+Home.Parent = MainMenu
+Home.BackgroundColor3 = Color3.fromRGB(170, 85, 0)
+Home.Position = UDim2.new(-0.00124420028, 0, 0, 0)
+Home.Size = UDim2.new(0, 427, 0, 317)
+
+Titleofhome.Name = "Titleofhome"
+Titleofhome.Parent = Home
+Titleofhome.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Titleofhome.Position = UDim2.new(0.0870895758, 0, 0.164888293, 0)
+Titleofhome.Size = UDim2.new(0, 350, 0, 45)
+Titleofhome.Font = Enum.Font.SourceSans
+Titleofhome.Text = "Hub Made By SantiX GD!"
+Titleofhome.TextColor3 = Color3.fromRGB(0, 0, 0)
+Titleofhome.TextScaled = true
+Titleofhome.TextSize = 14.000
+Titleofhome.TextWrapped = true
+
+advising.Name = "advising"
+advising.Parent = Home
+advising.BackgroundColor3 = Color3.fromRGB(170, 85, 0)
+advising.BorderSizePixel = 0
+advising.Position = UDim2.new(-0.00211230363, 0, 0.359245658, 0)
+advising.Size = UDim2.new(0, 426, 0, 202)
+advising.Font = Enum.Font.SourceSans
+advising.Text = "This Hub Contains Many Script Like Titan Reborn, Reviz Admin, Roxploit, Topkek And More!"
+advising.TextColor3 = Color3.fromRGB(0, 0, 0)
+advising.TextScaled = true
+advising.TextSize = 14.000
+advising.TextWrapped = true
+
+Guis.Name = "Guis"
+Guis.Parent = MainMenu
+Guis.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+Guis.Position = UDim2.new(-4.33064997e-08, 0, -0.015772881, 0)
+Guis.Size = UDim2.new(0, 426, 0, 322)
+Guis.Visible = false
+
+topkek30.Name = "topkek3.0"
+topkek30.Parent = Guis
+topkek30.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+topkek30.Position = UDim2.new(0.504694819, 0, 0.0621117949, 0)
+topkek30.Size = UDim2.new(0, 200, 0, 50)
+topkek30.Font = Enum.Font.SourceSans
+topkek30.Text = "Topkek3.0"
+topkek30.TextColor3 = Color3.fromRGB(0, 0, 0)
+topkek30.TextScaled = true
+topkek30.TextSize = 14.000
+topkek30.TextWrapped = true
+topkek30.MouseButton1Down:connect(function()
+loadstring(game:Httpget(("Https://pastebin.com/raw/S50b6raN"),true))()
+end)
+
+
+
+roxploit60.Name = "roxploit6.0"
+roxploit60.Parent = Guis
+roxploit60.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+roxploit60.Position = UDim2.new(0.504694819, 0, 0.316770166, 0)
+roxploit60.Size = UDim2.new(0, 200, 0, 50)
+roxploit60.Font = Enum.Font.SourceSans
+roxploit60.Text = "Roxploit6.0"
+roxploit60.TextColor3 = Color3.fromRGB(0, 0, 0)
+roxploit60.TextScaled = true
+roxploit60.TextSize = 14.000
+roxploit60.TextWrapped = true
+roxploit60.MouseButton1Down:connect(function()
+loadstring(game:Httpget(("https://pastebin.com/raw/pwbkiTZK"),true))()
+end)
+
+
+rosehub.Name = "rosehub"
+rosehub.Parent = Guis
+rosehub.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+rosehub.Position = UDim2.new(0.504694819, 0, 0.565217376, 0)
+rosehub.Size = UDim2.new(0, 200, 0, 50)
+rosehub.Font = Enum.Font.SourceSans
+rosehub.Text = "Rosehub"
+rosehub.TextColor3 = Color3.fromRGB(0, 0, 0)
+rosehub.TextScaled = true
+rosehub.TextSize = 14.000
+rosehub.TextWrapped = true
+rosehub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/PxsUetTK", true))()
+end)
+
+
+admin.Name = "admin"
+admin.Parent = Guis
+admin.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+admin.Position = UDim2.new(0.504694819, 0, 0.798136652, 0)
+admin.Size = UDim2.new(0, 200, 0, 50)
+admin.Font = Enum.Font.SourceSans
+admin.Text = "Admin"
+admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+admin.TextScaled = true
+admin.TextSize = 14.000
+admin.TextWrapped = true
+admin.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ibFPdiF7", true))()
+end)
+
+
+feanimationsgui.Name = "feanimationsgui"
+feanimationsgui.Parent = Guis
+feanimationsgui.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+feanimationsgui.Position = UDim2.new(0, 0, 0.798136652, 0)
+feanimationsgui.Size = UDim2.new(0, 200, 0, 50)
+feanimationsgui.Font = Enum.Font.SourceSans
+feanimationsgui.Text = "Free Animations GUi"
+feanimationsgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+feanimationsgui.TextScaled = true
+feanimationsgui.TextSize = 14.000
+feanimationsgui.TextWrapped = true
+feanimationsgui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/cMXtLdNW'),true))()
+end)
+
+arsenalaimbot.Name = "arsenalaimbot"
+arsenalaimbot.Parent = Guis
+arsenalaimbot.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+arsenalaimbot.Position = UDim2.new(0, 0, 0.565217376, 0)
+arsenalaimbot.Size = UDim2.new(0, 200, 0, 50)
+arsenalaimbot.Font = Enum.Font.SourceSans
+arsenalaimbot.Text = "DarkHub"
+arsenalaimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+arsenalaimbot.TextScaled = true
+arsenalaimbot.TextSize = 14.000
+arsenalaimbot.TextWrapped = true
+arsenalaimbot.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/yCrBkPaY"), true))()
+end)
+
+walkspeedbypass.Name = "walkspeedbypass"
+walkspeedbypass.Parent = Guis
+walkspeedbypass.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+walkspeedbypass.Position = UDim2.new(0, 0, 0.316770166, 0)
+walkspeedbypass.Size = UDim2.new(0, 200, 0, 50)
+walkspeedbypass.Font = Enum.Font.SourceSans
+walkspeedbypass.Text = "Walkspeed Bypass"
+walkspeedbypass.TextColor3 = Color3.fromRGB(0, 0, 0)
+walkspeedbypass.TextScaled = true
+walkspeedbypass.TextSize = 14.000
+walkspeedbypass.TextWrapped = true
+walkspeedbypass.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/55PiugrG"), true))()
+end)
+
+murdermistery2.Name = "murdermistery2"
+murdermistery2.Parent = Guis
+murdermistery2.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+murdermistery2.Position = UDim2.new(0, 0, 0.0621117949, 0)
+murdermistery2.Size = UDim2.new(0, 200, 0, 50)
+murdermistery2.Font = Enum.Font.SourceSans
+murdermistery2.Text = "MurderMistery2gui"
+murdermistery2.TextColor3 = Color3.fromRGB(0, 0, 0)
+murdermistery2.TextScaled = true
+murdermistery2.TextSize = 14.000
+murdermistery2.TextWrapped = true
+murdermistery2.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/7JWmmTVT'),true))()
+end)
+
+
+Scripts.Name = "Scripts"
+Scripts.Parent = MainMenu
+Scripts.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Scripts.Position = UDim2.new(-0.00100910664, 0, -0.0157728791, 0)
+Scripts.Size = UDim2.new(0, 427, 0, 320)
+Scripts.Visible = false
+
+AnonimusAll.Name = "AnonimusAll"
+AnonimusAll.Parent = Scripts
+AnonimusAll.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+AnonimusAll.Position = UDim2.new(0.511291802, 0, 0.0472299084, 0)
+AnonimusAll.Size = UDim2.new(0, 200, 0, 67)
+AnonimusAll.Font = Enum.Font.SourceSans
+AnonimusAll.Text = "Anonimus All"
+AnonimusAll.TextColor3 = Color3.fromRGB(0, 0, 0)
+AnonimusAll.TextScaled = true
+AnonimusAll.TextSize = 14.000
+AnonimusAll.TextWrapped = true
+AnonimusAll.MouseButton1Down:connect(function()
+for i,v in pairs(Falbous:GetPlayersName()) do
+pe = Instance.new("ParticleEmitter",game.Players[v].Character.Torso)
+pe.Texture = "http://roblox.com/asset/?id=127476787"
+pe.VelocitySpread = 50
+end
+end)
+
+TrumpFace.Name = "TrumpFace"
+TrumpFace.Parent = Scripts
+TrumpFace.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+TrumpFace.Position = UDim2.new(0.511291802, 0, 0.319592476, 0)
+TrumpFace.Size = UDim2.new(0, 200, 0, 65)
+TrumpFace.Font = Enum.Font.SourceSans
+TrumpFace.Text = "TrumpFace"
+TrumpFace.TextColor3 = Color3.fromRGB(0, 0, 0)
+TrumpFace.TextScaled = true
+TrumpFace.TextSize = 14.000
+TrumpFace.TextWrapped = true
+TrumpFace.MouseButton1Down:connect(function()
+gui1=Instance.new("BillboardGui")
+gui1.Parent= game.Players.LocalPlayer.Character.Head
+gui1.Adornee= game.Players.LocalPlayer.Character.Head
+gui1.Size=UDim2.new(2.5,0,2.5,0)
+gui1.StudsOffset=Vector3.new(0,0.2,0)
+gui1.AlwaysOnTop = true
+text1=Instance.new("ImageLabel")
+text1.Image = "http://www.roblox.com/asset/?id=343377229" --[[Face Image Source (If you wish to change the face to a different decal put it in there]]
+text1.Size=UDim2.new(1,0,1,0)
+text1.Position=UDim2.new(0,0,0,0)
+text1.BackgroundTransparency = 1
+text1.Parent=gui1
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+end)
+
+GokuOP.Name = "GokuOP"
+GokuOP.Parent = Scripts
+GokuOP.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+GokuOP.Position = UDim2.new(0.511291802, 0, 0.56910485, 0)
+GokuOP.Size = UDim2.new(0, 200, 0, 137)
+GokuOP.Font = Enum.Font.SourceSans
+GokuOP.Text = "Goku OP"
+GokuOP.TextColor3 = Color3.fromRGB(0, 0, 0)
+GokuOP.TextScaled = true
+GokuOP.TextSize = 14.000
+GokuOP.TextWrapped = true
+GokuOP.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/pauc7uHd"),true))()
+end)
+
+raindropGUI.Name = "raindropGUI"
+raindropGUI.Parent = Scripts
+raindropGUI.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+raindropGUI.Position = UDim2.new(0.00075314811, 0, 0.687854886, 0)
+raindropGUI.Size = UDim2.new(0, 200, 0, 101)
+raindropGUI.Font = Enum.Font.SourceSans
+raindropGUI.Text = "raindropGUI"
+raindropGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+raindropGUI.TextScaled = true
+raindropGUI.TextSize = 14.000
+raindropGUI.TextWrapped = true
+raindropGUI.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/p7LK0j9i"),true))()
+end)
+
+_666.Name = "666"
+_666.Parent = Scripts
+_666.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+_666.Position = UDim2.new(-0.00393069256, 0, 0.319592476, 0)
+_666.Size = UDim2.new(0, 200, 0, 94)
+_666.Font = Enum.Font.SourceSans
+_666.Text = "666"
+_666.TextColor3 = Color3.fromRGB(0, 0, 0)
+_666.TextScaled = true
+_666.TextSize = 14.000
+_666.TextWrapped = true
+_666.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/V6UMcLTm"),true))()
+end)
+
+DarkTitanreborn.Name = "DarkTitanreborn"
+DarkTitanreborn.Parent = Scripts
+DarkTitanreborn.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+DarkTitanreborn.Position = UDim2.new(0.00075314811, 0, 0.0472298637, 0)
+DarkTitanreborn.Size = UDim2.new(0, 200, 0, 68)
+DarkTitanreborn.Font = Enum.Font.SourceSans
+DarkTitanreborn.Text = "Dark Titan Reborn"
+DarkTitanreborn.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkTitanreborn.TextScaled = true
+DarkTitanreborn.TextSize = 14.000
+DarkTitanreborn.TextWrapped = true
+DarkTitanreborn.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/sfqD7kz0"),true))()
+end)
+
+PrisionSCripts.Name = "PrisionSCripts"
+PrisionSCripts.Parent = MainMenu
+PrisionSCripts.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+PrisionSCripts.Position = UDim2.new(-0.00335650379, 0, -0.0189274456, 0)
+PrisionSCripts.Size = UDim2.new(0, 428, 0, 323)
+PrisionSCripts.Visible = false
+
+killall.Name = "kill all"
+killall.Parent = PrisionSCripts
+killall.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+killall.Position = UDim2.new(0.0164319109, 0, 0.599369049, 0)
+killall.Size = UDim2.new(0, 200, 0, 50)
+killall.Font = Enum.Font.SourceSans
+killall.Text = "KillAll"
+killall.TextColor3 = Color3.fromRGB(0, 0, 0)
+killall.TextScaled = true
+killall.TextSize = 14.000
+killall.TextWrapped = true
+killall.MouseButton1Down:connect(function()
+workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+
+game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP) 
+
+wait(0.5)
+function kill(a)
+local A_1 =
+{
+[1] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-391.152252, 8.65560055, -83.2166901)),
+["Distance"] = 3.2524313926697,
+["Cframe"] = CFrame.new(840.310791, 101.334137, 2267.87988, 0.0636406094, 0.151434347, -0.986416459, 0, 0.988420188, 0.151741937, 0.997972965, -0.00965694897, 0.0629036576),
+["Hit"] = a.Character.Head
+},
+  [2] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-392.481476, -8.44939327, -76.7261353)),
+["Distance"] = 3.2699294090271,
+["Cframe"] = CFrame.new(840.290466, 101.184189, 2267.93506, 0.0964837447, 0.0589403138, -0.993587971, 4.65661287e-10, 0.998245299, 0.0592165813, 0.995334625, -0.00571343815, 0.0963144377),
+["Hit"] = a.Character.Head
+},
+[3] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-389.21701, -2.50536323, -92.2163162)),
+["Distance"] = 3.1665518283844,
+["Cframe"] = CFrame.new(840.338867, 101.236496, 2267.80371, 0.0166504811, 0.0941716284, -0.995416701, 1.16415322e-10, 0.995554805, 0.0941846818, 0.999861419, -0.00156822044, 0.0165764652),
+["Hit"] = a.Character.Head
+},
+[4] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-393.353973, 3.13988972, -72.5452042)),
+["Distance"] = 3.3218522071838,
+["Cframe"] = CFrame.new(840.277222, 101.285957, 2267.9707, 0.117109694, 0.118740402, -0.985994935, -1.86264515e-09, 0.992826641, 0.119563118, 0.993119001, -0.0140019981, 0.116269611),
+["Hit"] = a.Character.Head
+},
+[5] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-390.73172, 3.2097764, -85.5477524)),
+["Distance"] = 3.222757101059,
+["Cframe"] = CFrame.new(840.317993, 101.286423, 2267.86035, 0.0517584644, 0.123365127, -0.991010666, 0, 0.992340803, 0.123530701, 0.99865967, -0.00639375951, 0.0513620302),
+["Hit"] = a.Character.Head
+}
+}
+local A_2 = game.Players.LocalPlayer.Backpack["Remington 870"]
+local Event = game:GetService("ReplicatedStorage").ShootEvent
+Event:FireServer(A_1, A_2)
+Event:FireServer(A_1, A_2)
+end
+
+for i,v in pairs(game.Players:GetChildren())do
+if v.Name ~= game.Players.LocalPlayer.Name then
+kill(v)
+end
+end
+wait(1)
+workspace.Remote.TeamEvent:FireServer("Bright orange")
+end)
+
+Speed.Name = "Speed"
+Speed.Parent = PrisionSCripts
+Speed.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Speed.Position = UDim2.new(0.0164319109, 0, 0.11041005, 0)
+Speed.Size = UDim2.new(0, 200, 0, 50)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+Speed.MouseButton1Down:connect(function()
+Speed = "100" -- Change to how fast you want to go
+
+player = game.Players.LocalPlayer.Character
+power = "WalkSpeed"
+player.Humanoid[power] = Speed
+wait()
+player.HumanoidRootPart.CustomPhysicalProperties = PhysicalProperties.new(9e99, 9e99, 9e99, 9e99, 9e99)
+wait()
+repeat
+game.Workspace.Gravity = 1000
+wait()
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 287.5
+wait()
+until game.Players.LocalPlayer.Character.Humanoid.Health == 0
+end)
+
+btools.Name = "btools"
+btools.Parent = PrisionSCripts
+btools.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+btools.Position = UDim2.new(0.0140844928, 0, 0.353312254, 0)
+btools.Size = UDim2.new(0, 200, 0, 50)
+btools.Font = Enum.Font.SourceSans
+btools.Text = "Btools"
+btools.TextColor3 = Color3.fromRGB(0, 0, 0)
+btools.TextScaled = true
+btools.TextSize = 14.000
+btools.TextWrapped = true
+btools.MouseButton1Down:connect(function()
+BTOOLS
+local tool1   = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+tool1.BinType = "Hammer"
+end)
+
+
+
+LamePrisionGUI20.Name = "LamePrisionGUI2.0"
+LamePrisionGUI20.Parent = PrisionSCripts
+LamePrisionGUI20.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+LamePrisionGUI20.Position = UDim2.new(0.0140844928, 0, 0.81072551, 0)
+LamePrisionGUI20.Size = UDim2.new(0, 200, 0, 50)
+LamePrisionGUI20.Font = Enum.Font.SourceSans
+LamePrisionGUI20.Text = "LamePrisionGui2.0"
+LamePrisionGUI20.TextColor3 = Color3.fromRGB(0, 0, 0)
+LamePrisionGUI20.TextScaled = true
+LamePrisionGUI20.TextSize = 14.000
+LamePrisionGUI20.TextWrapped = true
+LamePrisionGUI20.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/2cmFx12n"),true))()
+end)
+
+yerhacksXD.Name = "yerhacksXD"
+yerhacksXD.Parent = PrisionSCripts
+yerhacksXD.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+yerhacksXD.Position = UDim2.new(0.507042229, 0, 0.81072551, 0)
+yerhacksXD.Size = UDim2.new(0, 200, 0, 50)
+yerhacksXD.Font = Enum.Font.SourceSans
+yerhacksXD.Text = "noobdudeispro Prision Gui"
+yerhacksXD.TextColor3 = Color3.fromRGB(0, 0, 0)
+yerhacksXD.TextScaled = true
+yerhacksXD.TextSize = 14.000
+yerhacksXD.TextWrapped = true
+yerhacksXD.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/Cc61Hd1m"),true))()
+end)
+
+PrisionBreaker16.Name = "PrisionBreaker1.6"
+PrisionBreaker16.Parent = PrisionSCripts
+PrisionBreaker16.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+PrisionBreaker16.Position = UDim2.new(0.507042229, 0, 0.599369049, 0)
+PrisionBreaker16.Size = UDim2.new(0, 200, 0, 50)
+PrisionBreaker16.Font = Enum.Font.SourceSans
+PrisionBreaker16.Text = "jmuse PRision Script v1"
+PrisionBreaker16.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrisionBreaker16.TextScaled = true
+PrisionBreaker16.TextSize = 14.000
+PrisionBreaker16.TextWrapped = true
+PrisionBreaker16.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/iYFAJrzb"),true))()
+end)
+
+PrisionBreaker15.Name = "PrisionBreaker1.5"
+PrisionBreaker15.Parent = PrisionSCripts
+PrisionBreaker15.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+PrisionBreaker15.Position = UDim2.new(0.507042229, 0, 0.353312314, 0)
+PrisionBreaker15.Size = UDim2.new(0, 200, 0, 50)
+PrisionBreaker15.Font = Enum.Font.SourceSans
+PrisionBreaker15.Text = "Prision Breaker 1.5"
+PrisionBreaker15.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrisionBreaker15.TextScaled = true
+PrisionBreaker15.TextSize = 14.000
+PrisionBreaker15.TextWrapped = true
+PrisionBreaker15.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/p3zYT0nM"),true))()
+end)
+
+JmusePaidPrisionScript.Name = "JmusePaidPrisionScript"
+JmusePaidPrisionScript.Parent = PrisionSCripts
+JmusePaidPrisionScript.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+JmusePaidPrisionScript.Position = UDim2.new(0.507042229, 0, 0.110410094, 0)
+JmusePaidPrisionScript.Size = UDim2.new(0, 200, 0, 50)
+JmusePaidPrisionScript.Font = Enum.Font.SourceSans
+JmusePaidPrisionScript.Text = "Jmuse Paid prision Script"
+JmusePaidPrisionScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+JmusePaidPrisionScript.TextScaled = true
+JmusePaidPrisionScript.TextSize = 14.000
+JmusePaidPrisionScript.TextWrapped = true
+JmusePaidPrisionScript.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/SantiX2GD/LOL/master/PRISION%20GUI%20BY%20JMUSE.txt"),true))()
+end)
+
+
+OPenlateralbarButton.Name = "OPenlateralbarButton"
+OPenlateralbarButton.Parent = MainMenu
+OPenlateralbarButton.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+OPenlateralbarButton.Position = UDim2.new(-0.0005953894, 0, -0.00572496653, 0)
+OPenlateralbarButton.Size = UDim2.new(0, 76, 0, 42)
+OPenlateralbarButton.Font = Enum.Font.SourceSans
+OPenlateralbarButton.Text = ">"
+OPenlateralbarButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OPenlateralbarButton.TextScaled = true
+OPenlateralbarButton.TextSize = 14.000
+OPenlateralbarButton.TextWrapped = true
+OPenlateralbarButton.MouseButton1Down:connect(function()
+lateralbar.Visible = true
+OPenlateralbarButton.Visible = false
+cLOSElateralbarButton.Visible = true
+end)
+
+
+cLOSElateralbarButton.Name = "cLOSElateralbarButton"
+cLOSElateralbarButton.Parent = MainMenu
+cLOSElateralbarButton.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+cLOSElateralbarButton.Position = UDim2.new(-0.000595420599, 0, -0.00257035904, 0)
+cLOSElateralbarButton.Size = UDim2.new(0, 77, 0, 41)
+cLOSElateralbarButton.Visible = false
+cLOSElateralbarButton.Font = Enum.Font.SourceSans
+cLOSElateralbarButton.Text = "<"
+cLOSElateralbarButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+cLOSElateralbarButton.TextScaled = true
+cLOSElateralbarButton.TextSize = 14.000
+cLOSElateralbarButton.TextWrapped = true
+cLOSElateralbarButton.MouseButton1Down:connect(function()
+lateralbar.Visible = false
+OPenlateralbarButton.Visible = true
+cLOSElateralbarButton.Visible = false
+end)
+
+
+minimize.Name = "minimize"
+minimize.Parent = MainMenu
+minimize.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+minimize.Position = UDim2.new(0.937108696, 0, -0.00264270674, 0)
+minimize.Size = UDim2.new(0, 26, 0, 27)
+minimize.Font = Enum.Font.SourceSans
+minimize.Text = "X"
+minimize.TextColor3 = Color3.fromRGB(0, 0, 0)
+minimize.TextScaled = true
+minimize.TextSize = 14.000
+minimize.TextWrapped = true
+minimize.MouseButton1Down:connect(function()
+MainMenu.Visible = false
+OPENHUB.Visible = true
+end)
+
+
+lateralbar.Name = "lateralbar"
+lateralbar.Parent = ScreenGui
+lateralbar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+lateralbar.Position = UDim2.new(0.194926575, 0, 0.309988436, 0)
+lateralbar.Size = UDim2.new(0, 75, 0, 278)
+lateralbar.Visible = false
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = lateralbar
+HomeButton.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+HomeButton.Position = UDim2.new(-0.00100911455, 0, 0.0780664906, 0)
+HomeButton.Size = UDim2.new(0, 75, 0, 43)
+HomeButton.Font = Enum.Font.SourceSans
+HomeButton.Text = "Home"
+HomeButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+HomeButton.TextScaled = true
+HomeButton.TextSize = 14.000
+HomeButton.TextWrapped = true
+HomeButton.MouseButton1Down:connect(function()
+Home.Visible = True
+Scripts.Visible = false
+Guis.Visible = false
+PrisionSCripts.Visible = true
+end)
+
+
+PrisionScriptsButton.Name = "PrisionScriptsButton"
+PrisionScriptsButton.Parent = lateralbar
+PrisionScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+PrisionScriptsButton.Position = UDim2.new(-0.00100911455, 0, 0.318942398, 0)
+PrisionScriptsButton.Size = UDim2.new(0, 75, 0, 43)
+PrisionScriptsButton.Font = Enum.Font.SourceSans
+PrisionScriptsButton.Text = "Prision Scripts"
+PrisionScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrisionScriptsButton.TextScaled = true
+PrisionScriptsButton.TextSize = 14.000
+PrisionScriptsButton.TextWrapped = true
+PrisionScriptsButton.MouseButton1Down:connect(function()
+Home.Visible = false
+Scripts.Visible = false
+Guis.Visible = false
+PrisionSCripts.Visible = true
+end)
+
+
+
+ScriptsButton.Name = "ScriptsButton"
+ScriptsButton.Parent = lateralbar
+ScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+ScriptsButton.Position = UDim2.new(-0.00100911455, 0, 0.585365772, 0)
+ScriptsButton.Size = UDim2.new(0, 75, 0, 43)
+ScriptsButton.Font = Enum.Font.SourceSans
+ScriptsButton.Text = "Scripts"
+ScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsButton.TextScaled = true
+ScriptsButton.TextSize = 14.000
+ScriptsButton.TextWrapped = true
+ScriptsButton.MouseButton1Down:connect(function()
+Home.Visible = false
+Scripts.Visible = true
+Guis.Visible = false
+PrisionSCripts.Visible = false
+end)
+
+GuisButton.Name = "GuisButton"
+GuisButton.Parent = lateralbar
+GuisButton.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+GuisButton.Position = UDim2.new(-0.0139961755, 0, 0.84084028, 0)
+GuisButton.Size = UDim2.new(0, 75, 0, 44)
+GuisButton.Font = Enum.Font.SourceSans
+GuisButton.Text = "Guis"
+GuisButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GuisButton.TextScaled = true
+GuisButton.TextSize = 14.000
+GuisButton.TextWrapped = true
+GuisButton.MouseButton1Down:connect(function()
+Home.Visible = false
+Scripts.Visible = false
+Guis.Visible = true
+PrisionSCripts.Visible = false
+end)
