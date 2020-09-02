@@ -1,0 +1,563 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local redirector = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local executor = Instance.new("ImageButton")
+local Scripthub = Instance.new("ImageButton")
+local titleexecutor = Instance.new("TextLabel")
+local titlescripthub = Instance.new("TextLabel")
+local Executor = Instance.new("Frame")
+local bar = Instance.new("Frame")
+local back = Instance.new("TextButton")
+local clear = Instance.new("TextButton")
+local execute = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Executebox = Instance.new("TextBox")
+local Scripts = Instance.new("Frame")
+local page1 = Instance.new("Frame")
+local Reviz = Instance.new("TextButton")
+local PrisionBreaker15 = Instance.new("TextButton")
+local DarkTitan = Instance.new("TextButton")
+local RaindropGui = Instance.new("TextButton")
+local PrisionGui202 = Instance.new("TextButton")
+local c00lgui = Instance.new("TextButton")
+local goku = Instance.new("TextButton")
+local infinityYield = Instance.new("TextButton")
+local KillAllprision = Instance.new("TextButton")
+local PotatoHub = Instance.new("TextButton")
+local _666 = Instance.new("TextButton")
+local cmdx = Instance.new("TextButton")
+local credits = Instance.new("TextButton")
+local respawn = Instance.new("TextButton")
+local NextPage = Instance.new("TextButton")
+local X = Instance.new("TextButton")
+local SantiXHubTitle = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local credits_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+redirector.Name = "redirector"
+redirector.Parent = ScreenGui
+redirector.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+redirector.Position = UDim2.new(0.172229618, 0, 0.181657851, 0)
+redirector.Selectable = true
+redirector.Size = UDim2.new(0, 515, 0, 361)
+redirector.Visible = true
+redirector.Active = true
+redirector.Draggable =  true
+
+title.Name = "title"
+title.Parent = redirector
+title.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+title.BorderColor3 = Color3.fromRGB(255, 170, 0)
+title.Position = UDim2.new(0, 0, -0.00116765662, 0)
+title.Size = UDim2.new(0, 515, 0, 91)
+title.Font = Enum.Font.SourceSans
+title.Text = "Pls Select An Option to start Exploiting"
+title.TextColor3 = Color3.fromRGB(0, 170, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+executor.Name = "executor"
+executor.Parent = redirector
+executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+executor.Position = UDim2.new(0.058252424, 0, 0.412742376, 0)
+executor.Size = UDim2.new(0, 201, 0, 205)
+executor.Image = "rbxassetid://55845624"
+executor.MouseButton1Down:connect(function()
+	redirector.Visible = false
+	Executor.Visible = true
+	Scripts.Visible = false
+end)
+
+
+Scripthub.Name = "Scripthub"
+Scripthub.Parent = redirector
+Scripthub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripthub.Position = UDim2.new(0.580582559, 0, 0.412742376, 0)
+Scripthub.Size = UDim2.new(0, 201, 0, 205)
+Scripthub.Image = "rbxassetid://95866080"
+Scripthub.MouseButton1Down:connect(function()
+	redirector.Visible = false
+	Executor.Visible = false
+	Scripts.Visible = true
+end)
+
+
+titleexecutor.Name = "titleexecutor"
+titleexecutor.Parent = redirector
+titleexecutor.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+titleexecutor.BorderColor3 = Color3.fromRGB(255, 170, 0)
+titleexecutor.Position = UDim2.new(0.0757281557, 0, 0.284150898, 0)
+titleexecutor.Size = UDim2.new(0, 183, 0, 40)
+titleexecutor.Font = Enum.Font.SourceSans
+titleexecutor.Text = "Lua Executor"
+titleexecutor.TextColor3 = Color3.fromRGB(0, 170, 255)
+titleexecutor.TextScaled = true
+titleexecutor.TextSize = 14.000
+titleexecutor.TextWrapped = true
+titleexecutor.Visible = true
+
+titlescripthub.Name = "titlescripthub"
+titlescripthub.Parent = redirector
+titlescripthub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+titlescripthub.BorderColor3 = Color3.fromRGB(255, 170, 0)
+titlescripthub.Position = UDim2.new(0.598058283, 0, 0.284150898, 0)
+titlescripthub.Size = UDim2.new(0, 183, 0, 40)
+titlescripthub.Font = Enum.Font.SourceSans
+titlescripthub.Text = "Scripthub"
+titlescripthub.TextColor3 = Color3.fromRGB(0, 170, 255)
+titlescripthub.TextScaled = true
+titlescripthub.TextSize = 14.000
+titlescripthub.TextWrapped = true
+titlescripthub.Visible = true
+
+Executor.Name = "Executor"
+Executor.Parent = ScreenGui
+Executor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Executor.Position = UDim2.new(0.013351134, 0, 0.530864179, 0)
+Executor.Size = UDim2.new(0, 394, 0, 257)
+Executor.Visible = false
+Executor.Active = true
+Executor.Draggable = true
+
+
+
+bar.Name = "bar"
+bar.Parent = Executor
+bar.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+bar.Position = UDim2.new(0.0142280078, 0, 0.0284603126, 0)
+bar.Size = UDim2.new(0, 382, 0, 33)
+
+back.Name = "back"
+back.Parent = Executor
+back.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+back.BorderSizePixel = 0
+back.Position = UDim2.new(0.0126903551, 0, 0.0284603126, 0)
+back.Size = UDim2.new(0, 27, 0, 32)
+back.Font = Enum.Font.SourceSans
+back.Text = "<"
+back.TextColor3 = Color3.fromRGB(170, 0, 0)
+back.TextScaled = true
+back.TextSize = 14.000
+back.TextWrapped = true
+back.MouseButton1Down:connect(function()
+	redirector.Visible = true
+	Executor.Visible = false
+	Scripts.Visible = false
+end)
+
+
+clear.Name = "clear"
+clear.Parent = Executor
+clear.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+clear.Position = UDim2.new(0.526817501, 0, 0.838305235, 0)
+clear.Size = UDim2.new(0, 180, 0, 33)
+clear.Font = Enum.Font.SourceSans
+clear.Text = "Clear"
+clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+clear.TextScaled = true
+clear.TextSize = 14.000
+clear.TextWrapped = true
+clear.MouseButton1Down:connect(function()
+	Executebox.Text = "Cleared!"
+end)
+
+
+execute.Name = "execute"
+execute.Parent = Executor
+execute.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+execute.Position = UDim2.new(0.013866202, 0, 0.838305235, 0)
+execute.Size = UDim2.new(0, 185, 0, 33)
+execute.Font = Enum.Font.SourceSans
+execute.Text = "Execute"
+execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+execute.TextScaled = true
+execute.TextSize = 14.000
+execute.TextWrapped = true
+execute.MouseButton1Down:connect(function()
+	Executebox.Text = "by the moment this not work!"
+end)
+
+
+ScrollingFrame.Parent = Executor
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.Position = UDim2.new(0.0214804411, 0, 0.191814452, 0)
+ScrollingFrame.Size = UDim2.new(0, 376, 0, 158)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 9999)
+
+Executebox.Name = "Executebox"
+Executebox.Parent = ScrollingFrame
+Executebox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Executebox.Size = UDim2.new(0, 362, 0, 10510)
+Executebox.Font = Enum.Font.SourceSans
+Executebox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Executebox.TextSize = 14.000
+Executebox.TextXAlignment = Enum.TextXAlignment.Left
+Executebox.TextYAlignment = Enum.TextYAlignment.Top
+
+Scripts.Name = "Scripts"
+Scripts.Parent = ScreenGui
+Scripts.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Scripts.Position = UDim2.new(0.364486009, 0, 0.583774209, 0)
+Scripts.Size = UDim2.new(0, 467, 0, 228)
+Scripts.Visible = false
+Scripts.Active = true
+Scripts.Draggable = true
+
+
+
+page1.Name = "page1"
+page1.Parent = Scripts
+page1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+page1.BorderSizePixel = 0
+page1.Position = UDim2.new(0.023614658, 0, 0.292188823, 0)
+page1.Size = UDim2.new(0, 449, 0, 127)
+
+Reviz.Name = "Reviz"
+Reviz.Parent = page1
+Reviz.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+Reviz.Position = UDim2.new(-0.000649520196, 0, -0.0028828904, 0)
+Reviz.Size = UDim2.new(0, 52, 0, 34)
+Reviz.Font = Enum.Font.SourceSans
+Reviz.Text = "Reviz"
+Reviz.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reviz.TextScaled = true
+Reviz.TextSize = 14.000
+Reviz.TextWrapped = true
+Reviz.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ibFPdiF7", true))()
+end)
+
+PrisionBreaker15.Name = "PrisionBreaker1.5"
+PrisionBreaker15.Parent = page1
+PrisionBreaker15.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+PrisionBreaker15.Position = UDim2.new(0.271065414, 0, -0.0028828904, 0)
+PrisionBreaker15.Size = UDim2.new(0, 52, 0, 34)
+PrisionBreaker15.Font = Enum.Font.SourceSans
+PrisionBreaker15.Text = "Prision Breaker1.5"
+PrisionBreaker15.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrisionBreaker15.TextScaled = true
+PrisionBreaker15.TextSize = 14.000
+PrisionBreaker15.TextWrapped = true
+PrisionBreaker15.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SantiX2GD/LOL/master/PRISION%20BREAKER%201.5.txt", true))()
+end)
+
+
+
+DarkTitan.Name = "DarkTitan"
+DarkTitan.Parent = page1
+DarkTitan.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+DarkTitan.Position = UDim2.new(0.861265957, 0, -0.00288282987, 0)
+DarkTitan.Size = UDim2.new(0, 52, 0, 34)
+DarkTitan.Font = Enum.Font.SourceSans
+DarkTitan.Text = "DarkTitanReborn"
+DarkTitan.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkTitan.TextSize = 14.000
+DarkTitan.TextWrapped = true
+DarkTitan.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/12YuDbah", true))()
+end)
+
+
+RaindropGui.Name = "RaindropGui"
+RaindropGui.Parent = page1
+RaindropGui.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+RaindropGui.Position = UDim2.new(0.598459601, 0, -0.0028828904, 0)
+RaindropGui.Size = UDim2.new(0, 52, 0, 34)
+RaindropGui.Font = Enum.Font.SourceSans
+RaindropGui.Text = "RaindropGui"
+RaindropGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+RaindropGui.TextSize = 14.000
+RaindropGui.TextWrapped = true
+RaindropGui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/KCaTHyDN", true))()
+end)
+
+
+PrisionGui202.Name = "PrisionGui2.0.2"
+PrisionGui202.Parent = page1
+PrisionGui202.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+PrisionGui202.Position = UDim2.new(0.271065414, 0, 0.359321833, 0)
+PrisionGui202.Size = UDim2.new(0, 52, 0, 34)
+PrisionGui202.Font = Enum.Font.SourceSans
+PrisionGui202.Text = "Prision Gui 2.0.2"
+PrisionGui202.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrisionGui202.TextSize = 14.000
+PrisionGui202.TextWrapped = true
+PrisionGui202.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/2cmFx12n"),true))()
+end)
+
+
+c00lgui.Name = "c00lgui"
+c00lgui.Parent = page1
+c00lgui.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+c00lgui.Position = UDim2.new(0.598459601, 0, 0.359321833, 0)
+c00lgui.Size = UDim2.new(0, 52, 0, 34)
+c00lgui.Font = Enum.Font.SourceSans
+c00lgui.Text = "c00lgui"
+c00lgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+c00lgui.TextScaled = true
+c00lgui.TextSize = 14.000
+c00lgui.TextWrapped = true
+c00lgui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SantiX2GD/LOL/master/c00lgui..txt", true))()
+end)
+
+
+goku.Name = "goku"
+goku.Parent = page1
+goku.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+goku.Position = UDim2.new(0.861265898, 0, 0.359321833, 0)
+goku.Size = UDim2.new(0, 52, 0, 34)
+goku.Font = Enum.Font.SourceSans
+goku.Text = "Goku"
+goku.TextColor3 = Color3.fromRGB(0, 0, 0)
+goku.TextScaled = true
+goku.TextSize = 14.000
+goku.TextWrapped = true
+goku.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/pauc7uHd"),true))()
+end)
+
+
+infinityYield.Name = "infinityYield"
+infinityYield.Parent = page1
+infinityYield.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+infinityYield.Position = UDim2.new(-0.000649520196, 0, 0.359321833, 0)
+infinityYield.Size = UDim2.new(0, 52, 0, 34)
+infinityYield.Font = Enum.Font.SourceSans
+infinityYield.Text = "Infinty Yield"
+infinityYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+infinityYield.TextScaled = true
+infinityYield.TextSize = 14.000
+infinityYield.TextWrapped = true
+infinityYield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+end)
+
+
+KillAllprision.Name = "KillAllprision"
+KillAllprision.Parent = page1
+KillAllprision.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+KillAllprision.Position = UDim2.new(0.271065414, 0, 0.729400575, 0)
+KillAllprision.Size = UDim2.new(0, 52, 0, 34)
+KillAllprision.Font = Enum.Font.SourceSans
+KillAllprision.Text = "Kill All Prision"
+KillAllprision.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAllprision.TextScaled = true
+KillAllprision.TextSize = 14.000
+KillAllprision.TextWrapped = true
+KillAllprision.MouseButton1Down:connect(function()
+workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+
+game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP) 
+
+wait(0.5)
+function kill(a)
+local A_1 =
+{
+[1] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-391.152252, 8.65560055, -83.2166901)),
+["Distance"] = 3.2524313926697,
+["Cframe"] = CFrame.new(840.310791, 101.334137, 2267.87988, 0.0636406094, 0.151434347, -0.986416459, 0, 0.988420188, 0.151741937, 0.997972965, -0.00965694897, 0.0629036576),
+["Hit"] = a.Character.Head
+},
+  [2] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-392.481476, -8.44939327, -76.7261353)),
+["Distance"] = 3.2699294090271,
+["Cframe"] = CFrame.new(840.290466, 101.184189, 2267.93506, 0.0964837447, 0.0589403138, -0.993587971, 4.65661287e-10, 0.998245299, 0.0592165813, 0.995334625, -0.00571343815, 0.0963144377),
+["Hit"] = a.Character.Head
+},
+[3] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-389.21701, -2.50536323, -92.2163162)),
+["Distance"] = 3.1665518283844,
+["Cframe"] = CFrame.new(840.338867, 101.236496, 2267.80371, 0.0166504811, 0.0941716284, -0.995416701, 1.16415322e-10, 0.995554805, 0.0941846818, 0.999861419, -0.00156822044, 0.0165764652),
+["Hit"] = a.Character.Head
+},
+[4] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-393.353973, 3.13988972, -72.5452042)),
+["Distance"] = 3.3218522071838,
+["Cframe"] = CFrame.new(840.277222, 101.285957, 2267.9707, 0.117109694, 0.118740402, -0.985994935, -1.86264515e-09, 0.992826641, 0.119563118, 0.993119001, -0.0140019981, 0.116269611),
+["Hit"] = a.Character.Head
+},
+[5] =
+{
+["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-390.73172, 3.2097764, -85.5477524)),
+["Distance"] = 3.222757101059,
+["Cframe"] = CFrame.new(840.317993, 101.286423, 2267.86035, 0.0517584644, 0.123365127, -0.991010666, 0, 0.992340803, 0.123530701, 0.99865967, -0.00639375951, 0.0513620302),
+["Hit"] = a.Character.Head
+}
+}
+local A_2 = game.Players.LocalPlayer.Backpack["Remington 870"]
+local Event = game:GetService("ReplicatedStorage").ShootEvent
+Event:FireServer(A_1, A_2)
+Event:FireServer(A_1, A_2)
+end
+
+for i,v in pairs(game.Players:GetChildren())do
+if v.Name ~= game.Players.LocalPlayer.Name then
+kill(v)
+end
+end
+wait(1)
+workspace.Remote.TeamEvent:FireServer("Bright orange")
+end)
+
+
+PotatoHub.Name = "PotatoHub"
+PotatoHub.Parent = page1
+PotatoHub.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+PotatoHub.Position = UDim2.new(0.598459601, 0, 0.729400575, 0)
+PotatoHub.Size = UDim2.new(0, 52, 0, 34)
+PotatoHub.Font = Enum.Font.SourceSans
+PotatoHub.Text = "PotatoHub"
+PotatoHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+PotatoHub.TextScaled = true
+PotatoHub.TextSize = 14.000
+PotatoHub.TextWrapped = true
+PotatoHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SantiX2GD/LOL/master/POTATO%20HUB.txt", true))()
+end)
+
+
+_666.Name = "666"
+_666.Parent = page1
+_666.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+_666.Position = UDim2.new(0.861265898, 0, 0.729400575, 0)
+_666.Size = UDim2.new(0, 52, 0, 34)
+_666.Font = Enum.Font.SourceSans
+_666.Text = "666"
+_666.TextColor3 = Color3.fromRGB(0, 0, 0)
+_666.TextScaled = true
+_666.TextSize = 14.000
+_666.TextWrapped = true
+_666.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/V6UMcLTm"),true))()
+end)
+
+
+cmdx.Name = "cmd-x"
+cmdx.Parent = page1
+cmdx.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+cmdx.Position = UDim2.new(-0.000649520196, 0, 0.729400575, 0)
+cmdx.Size = UDim2.new(0, 52, 0, 34)
+cmdx.Font = Enum.Font.SourceSans
+cmdx.Text = "cmd-x admin"
+cmdx.TextColor3 = Color3.fromRGB(0, 0, 0)
+cmdx.TextScaled = true
+cmdx.TextSize = 14.000
+cmdx.TextWrapped = true
+cmdx.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/HFkyyd1H",true))()
+end)
+
+
+credits.Name = "credits"
+credits.Parent = page1
+credits.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+credits.Position = UDim2.new(0.133052364, 0, -0.36317265, 0)
+credits.Size = UDim2.new(0, 47, 0, 37)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "Credits"
+credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+credits.TextScaled = true
+credits.TextSize = 14.000
+credits.TextWrapped = true
+
+respawn.Name = "respawn"
+respawn.Parent = page1
+respawn.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+respawn.Position = UDim2.new(-0.00280598551, 0, -0.496580601, 0)
+respawn.Size = UDim2.new(0, 46, 0, 38)
+respawn.Font = Enum.Font.SourceSans
+respawn.Text = "Respawn"
+respawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+respawn.TextScaled = true
+respawn.TextSize = 14.000
+respawn.TextWrapped = true
+
+NextPage.Name = "NextPage"
+NextPage.Parent = page1
+NextPage.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+NextPage.Position = UDim2.new(0.788168609, 0, -0.368280828, 0)
+NextPage.Size = UDim2.new(0, 40, 0, 36)
+NextPage.Font = Enum.Font.SourceSans
+NextPage.Text = "<"
+NextPage.TextColor3 = Color3.fromRGB(0, 0, 0)
+NextPage.TextScaled = true
+NextPage.TextSize = 14.000
+NextPage.TextWrapped = true
+NextPage.MouseButton1Down:connect(function()
+	redirector.Visible = true
+	Executor.Visible = false
+	Scripts.Visible = false
+end)
+
+
+X.Name = "X"
+X.Parent = page1
+X.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+X.Position = UDim2.new(0.895133197, 0, -0.504229665, 0)
+X.Size = UDim2.new(0, 36, 0, 43)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+X.MouseButton1Down:connect(function()
+	redirector.Visible = false
+	executor.Visible = false
+	Scripts.Visible = false
+end)
+
+SantiXHubTitle.Name = "SantiXHubTitle"
+SantiXHubTitle.Parent = page1
+SantiXHubTitle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SantiXHubTitle.BorderSizePixel = 0
+SantiXHubTitle.Position = UDim2.new(0.301094174, 0, -0.497030437, 0)
+SantiXHubTitle.Size = UDim2.new(0, 173, 0, 38)
+SantiXHubTitle.Font = Enum.Font.SourceSans
+SantiXHubTitle.Text = "SantiX Hub Edit"
+SantiXHubTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+SantiXHubTitle.TextScaled = true
+SantiXHubTitle.TextSize = 14.000
+SantiXHubTitle.TextWrapped = true
+
+TextLabel.Parent = page1
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+TextLabel.Position = UDim2.new(0.0127842147, 0, 1.10355866, 0)
+TextLabel.Size = UDim2.new(0, 431, 0, 21)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Page1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+credits_2.Name = "credits"
+credits_2.Parent = page1
+credits_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+credits_2.BorderSizePixel = 0
+credits_2.Position = UDim2.new(0.276586324, 0, -0.226548567, 0)
+credits_2.Size = UDim2.new(0, 195, 0, 28)
+credits_2.Font = Enum.Font.SourceSans
+credits_2.Text = "made by SantiX_GD and Roblox Studio"
+credits_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits_2.TextScaled
