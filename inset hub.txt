@@ -1,0 +1,151 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local InsetHub = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local tite = Instance.new("TextLabel")
+local PrisionGui = Instance.new("TextButton")
+local RoseHub = Instance.new("TextButton")
+local Topkek30 = Instance.new("TextButton")
+local Loadstringer = Instance.new("TextButton")
+local loadstringer = Instance.new("Frame")
+local load = Instance.new("TextButton")
+local input = Instance.new("TextBox")
+local title = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+
+InsetHub.Name = "InsetHub"
+InsetHub.Parent = ScreenGui
+InsetHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InsetHub.Position = UDim2.new(0.0160213616, 0, 0.493827164, 0)
+InsetHub.Size = UDim2.new(0, 214, 0, 275)
+
+Bar.Name = "Bar"
+Bar.Parent = InsetHub
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.Size = UDim2.new(0, 214, 0, 42)
+
+tite.Name = "tite"
+tite.Parent = Bar
+tite.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+tite.Size = UDim2.new(0, 214, 0, 42)
+tite.Font = Enum.Font.SourceSans
+tite.Text = "Inset Hub"
+tite.TextColor3 = Color3.fromRGB(0, 0, 0)
+tite.TextScaled = true
+tite.TextSize = 14.000
+tite.TextWrapped = true
+
+PrisionGui.Name = "PrisionGui"
+PrisionGui.Parent = InsetHub
+PrisionGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PrisionGui.Position = UDim2.new(0.0420560762, 0, 0.200000003, 0)
+PrisionGui.Size = UDim2.new(0, 194, 0, 50)
+PrisionGui.Font = Enum.Font.SourceSans
+PrisionGui.Text = "LamePrisionGui"
+PrisionGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrisionGui.TextScaled = true
+PrisionGui.TextSize = 14.000
+PrisionGui.TextWrapped = true
+PrisionGui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SantiX2GD/LOL/master/MENU%20DE%20HACK%20PARA%20PRISON%20LIFE%20%5BYER%20HACKS%5D.txt", true))()
+end)
+
+RoseHub.Name = "RoseHub"
+RoseHub.Parent = InsetHub
+RoseHub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RoseHub.Position = UDim2.new(0.0420560762, 0, 0.4546673, 0)
+RoseHub.Size = UDim2.new(0, 193, 0, 50)
+RoseHub.Font = Enum.Font.SourceSans
+RoseHub.Text = "Rosehub"
+RoseHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+RoseHub.TextScaled = true
+RoseHub.TextSize = 14.000
+RoseHub.TextWrapped = true
+Rosehub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SantiX2GD/LOL/master/Rose%20HUb%201.3.1.txt", true))()
+end)
+
+Topkek30.Name = "Topkek3.0"
+Topkek30.Parent = InsetHub
+Topkek30.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Topkek30.Position = UDim2.new(0.0460614152, 0, 0.703306139, 0)
+Topkek30.Size = UDim2.new(0, 193, 0, 41)
+Topkek30.Font = Enum.Font.SourceSans
+Topkek30.Text = "Topkek3.0"
+Topkek30.TextColor3 = Color3.fromRGB(255, 255, 255)
+Topkek30.TextScaled = true
+Topkek30.TextSize = 14.000
+Topkek30.TextWrapped = true
+Topkek30.MouseButton1Down:connect(function()
+loadstring(game:Httpget(('Https://pastebin.com/raw/S50b6raN'),true))()
+end)
+
+Loadstringer.Name = "Loadstringer"
+Loadstringer.Parent = InsetHub
+Loadstringer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Loadstringer.Position = UDim2.new(0.0460614339, 0, 0.900471389, 0)
+Loadstringer.Size = UDim2.new(0, 192, 0, 20)
+Loadstringer.Font = Enum.Font.SourceSans
+Loadstringer.Text = "LoadStringer"
+Loadstringer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loadstringer.TextScaled = true
+Loadstringer.TextSize = 14.000
+Loadstringer.TextWrapped = true
+Loadstringer.MouseButton1Down:connect(function()
+loadstringer.Visible = true
+end)
+
+loadstringer.Name = "loadstringer"
+loadstringer.Parent = ScreenGui
+loadstringer.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+loadstringer.Position = UDim2.new(0.436582118, 0, 0.751322746, 0)
+loadstringer.Size = UDim2.new(0, 410, 0, 133)
+loadstringer.Visible = false
+
+load.Name = "load"
+load.Parent = loadstringer
+load.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+load.Position = UDim2.new(0.29872033, 0, 0.657212079, 0)
+load.Size = UDim2.new(0, 179, 0, 39)
+load.Font = Enum.Font.SourceSans
+load.Text = "Load"
+load.TextColor3 = Color3.fromRGB(255, 255, 255)
+load.TextScaled = true
+load.TextSize = 14.000
+load.TextWrapped = true
+load.MouseButton1Down:connect(function()
+loadstring(input.text)()
+end)
+
+input.Name = "input"
+input.Parent = loadstringer
+input.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+input.Position = UDim2.new(0.0146341464, 0, 0.348941416, 0)
+input.Size = UDim2.new(0, 397, 0, 31)
+input.ClearTextOnFocus = false
+input.Font = Enum.Font.SourceSans
+input.Text = "--paste ur loadstring here"
+input.TextColor3 = Color3.fromRGB(255, 255, 255)
+input.TextScaled = true
+input.TextSize = 14.000
+input.TextWrapped = true
+input.TextXAlignment = Enum.TextXAlignment.Left
+
+title.Name = "title"
+title.Parent = loadstringer
+title.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+title.Position = UDim2.new(-3.24845314e-06, 0, -0.000556945801, 0)
+title.Size = UDim2.new(0, 410, 0, 38)
+title.Font = Enum.Font.SourceSans
+title.Text = "Loadstringer"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
